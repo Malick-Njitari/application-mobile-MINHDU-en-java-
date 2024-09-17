@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "493956755872",
+    "project_id": "projetjavaok2024",
+    "storage_bucket": "projetjavaok2024.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493956755872:android:52d0eb14a3cb3439eb34c5",
+        "android_client_info": {
+          "package_name": "com.example.projetjavaok"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo01RuwHXnFLkmmpI9M9UkBmU0_cZw31s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

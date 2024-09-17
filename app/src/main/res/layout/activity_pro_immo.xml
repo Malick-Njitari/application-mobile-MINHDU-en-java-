@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.AgentImmoActivity"
+    android:background="@drawable/bg16"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_gravity="center">
+
+    <TextView
+        android:text="Espace Promoteurs Immobiliers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:paddingBottom="20dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_phone_number_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numéro de téléphone"
+        android:layout_marginTop="88dp"
+        android:textColorHint="@color/white"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_phone_number_input"
+        android:layout_marginTop="6dp"
+        android:hint="Mot de passe"
+        android:textColorHint="@color/white"
+        app:passwordToggleEnabled="true"
+        android:transitionName="password_tran"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/login_password_input"
+        android:layout_marginTop="5dp">
+
+        <CheckBox
+            android:id="@+id/remember_me_chkb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Se souvenir de moi"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/compte2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mot de passe oublié?"
+            android:textSize="14sp"
+            android:layout_marginLeft="60dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout_1"
+        android:padding="15dp"
+        android:textAllCaps="false"
+        android:textSize="19sp"
+        android:text="Se connecter"
+        android:textColor="#fff"
+        android:transitionName="button_tran"
+        android:background="@drawable/rounded_button"/>
+    <TextView
+        android:id="@+id/compte1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Créer un compte"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="335dp"
+        android:textColor="@color/white"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_password_input"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:padding="8dp"
+                android:text="Les Promoteurs immobiliers désireux d’exercer au Cameroun doivent déposer un dossier de demande d’agrément comprenant les pièces ci-après :"
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Groupe 1 : Données concernant la personne physique"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NB: Scanner les documents du Groupe1 puis mettez tous ces documents dans un seul fichier "
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:textColor="@color/color_red"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="=>Copie certifiée conforme de la Carte Nationale d’Identité du demandeur."
+                android:textSize="14sp"
+                android:paddingStart="16dp"
+                android:padding="4dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="=>Curriculum vitae daté et signé du demandeur."
+                android:textSize="14sp"
+                android:paddingStart="16dp"
+                android:padding="4dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="=>Engagement sur l’honneur concernant le personnel qualifié, conformément à l’article 19 du décret n°2007/1419/PM."
+                android:textSize="14sp"
+                android:paddingStart="16dp"
+                android:padding="4dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Groupe 2 : Données concernant une entreprise"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NB: Scanner les documents du Groupe2 puis mettez tous ces documents dans un seul fichier "
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:textColor="@color/color_red" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="=>Attestation de garantie financière d’un montant de 2 500 000 FCFA."
+                android:textSize="14sp"
+                android:paddingStart="16dp"
+                android:padding="4dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="=>Extrait du registre de commerce et du crédit mobilier datant de moins de trois mois."
+                android:textSize="14sp"
+                android:paddingStart="16dp"
+                android:padding="4dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="=>Copies certifiées conformes des documents suivants :"
+                android:textSize="14sp"
+                android:paddingStart="16dp"
+                android:padding="4dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="=>Attestation d'immatriculation fiscale."
+                android:textSize="14sp"
+                android:paddingStart="32dp"
+                android:padding="4dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="=>Attestation de non redevance."
+                android:textSize="14sp"
+                android:paddingStart="32dp"
+                android:padding="4dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="=>Attestation d'immatriculation à la CNPS (si applicable)."
+                android:textSize="14sp"
+                android:paddingStart="32dp"
+                android:padding="4dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="=>Attestation de non faillite (si applicable)."
+                android:textSize="14sp"
+                android:paddingStart="16dp"
+                android:padding="4dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="=>Expédition des statuts de la société (pour les personnes morales)."
+                android:textSize="14sp"
+                android:paddingStart="16dp"
+                android:padding="4dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="=>Références bancaires de la société ou relevés des comptes des douze derniers mois."
+                android:textSize="14sp"
+                android:paddingStart="16dp"
+                android:padding="4dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="=>Justification d'une association avec un promoteur immobilier camerounais (pour promoteurs étrangers)."
+                android:textSize="14sp"
+                android:paddingStart="16dp"
+                android:padding="4dp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

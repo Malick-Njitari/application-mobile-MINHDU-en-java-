@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.HomeActivity"
+    android:background="@drawable/bg19">
+
+<!--    android:background="@drawable/drapeau1" -->
+<ScrollView
+    android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="16dp"
+android:layout_marginTop="30dp">
+<!--    Voici les documents à founir pour la soumission concernant promoteur immobilier -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="100dp"
+    android:layout_marginTop="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp"
+        android:background="@color/ic_launcher_background">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Espace d'importation, puis envoi des documents."
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:background="@color/ic_launcher_background">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Les documents doivent être scannés selon les deux groupes précédemment définis afin d'avoir uniquement deux fichiers à inporter."
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iconTelechargement"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/inporter" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/filePathEditText2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Inporter le fichier du Group1 ici"
+            android:focusable="false"
+            android:textSize="28dp"
+            android:textColorHint="@color/black"/>
+
+        <ImageView
+            android:id="@+id/uploadpdf"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/iconetelech" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/filePathEditText3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="2dp"
+            android:hint="Inporter le fichier du Group2 ici"
+            android:focusable="false"
+            android:textSize="28dp"
+            android:textColorHint="@color/black"/>
+
+        <ImageView
+            android:id="@+id/uploadpdf2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/iconetelech" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

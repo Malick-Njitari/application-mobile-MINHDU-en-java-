@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_green">#007A33</color> <!-- Vert -->
+    <color name="color_red">#F3062A</color> <!-- Rouge -->
+    <color name="color_yellow">#FBCB00</color> <!-- Jaune -->
+    <color name="color_rose">#9309BA</color> <!-- Jrose -->
+    <color name="color_vertCitron">#12F60B</color> <!-- vertCitron -->
+</resources>

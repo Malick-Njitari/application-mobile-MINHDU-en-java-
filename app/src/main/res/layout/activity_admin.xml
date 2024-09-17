@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.AdminActivity"
+    android:background="@drawable/bg10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UNIQUEMENT L'ADMINISTRATEUR"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           >
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="27dp"
+            android:layout_gravity="center"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telephone d'Utilisateur"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_below="@+id/register_applogo"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="19dp"
+            android:id="@+id/editEmail">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editMotDePasse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_phone_number_input"
+            android:layout_marginTop="6dp"
+            android:hint="Password"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            app:passwordToggleEnabled="true"
+            android:transitionName="password_tran"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/login_password_input"
+            android:layout_marginTop="5dp"
+            >
+
+            <CheckBox
+                android:id="@+id/remember_me_chkb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Se souvenir de moi"
+                android:layout_marginTop="16dp"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/creer"
+            android:textColor="@color/white"/>
+<!--        android:text="Créer un compte"-->
+
+        <Button
+            android:id="@+id/btnConnexion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_password_input"
+            android:layout_marginTop="40dp"
+            android:textSize="14sp"
+            android:text="Connecter vous"
+            android:textColor="@android:color/white"
+            android:transitionName="button_tran"
+            android:background="@drawable/rounded_button"/>
+
+        <TextView
+            android:id="@+id/admin_panel_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Je suis Admin ImmoManager?"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/login_btn"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="80dp"
+            android:layout_marginEnd="23dp"
+            android:textColor="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/not_admin_panel_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Je ne suis pas Admin ImmoManager?"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/login_btn"
+
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="80dp"
+            android:layout_marginStart="25dp"
+            android:visibility="invisible"
+            />
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
